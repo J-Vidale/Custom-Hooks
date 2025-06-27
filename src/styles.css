@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Pagination styling */
+.pagination-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 16px;
+}
+
+.pagination-container button {
+  min-width: 36px;
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.pagination-container button:hover:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.pagination-container button:disabled {
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.pagination-container button.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* List styling */
+ul.item-list {
+  list-style: none;
+  padding: 0;
+}
+
+ul.item-list li {
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Debounce search styling */
+.search-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.search-container input[type="text"],
+.search-container input[type="number"] {
+  width: 200px;
+  padding: 8px;
+  margin: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-container label {
+  margin-right: 8px;
+  font-weight: bold;
+}
+.page-spinner {
+  display: inline-flex;
+  align-items: center;
+  gap: 4-px;
+}
+.page-spinner input {
+  width: 60px;
+  text-align: center;
+  margin: 0 4px;
+}
+.page-spinner button {
+  padding: 4px 8px;
+}
+.page-spinner-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 0;
+}
